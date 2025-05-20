@@ -9,6 +9,10 @@ nav {
 	background-color: #233a67;
 	color: white;
 }
+i{
+    color: white;
+    font-size: 50px;
+}
 
 .navflex {
 	display: flex;
