@@ -3,6 +3,83 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.navdel2 {
+    align-items: center;
+}
+
+.navdel3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dropdown-content2 {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+    background-color: inherit;
+    border: 0px solid var(--hvit);
+}
+
+.dropdown-content2 a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.dropdown-content2>div {
+    border: 1px solid var(--hvit);
+}
+
+
+.dropbtn {
+    background-color: inherit;
+    font-size: 40px;
+    border: none;
+}
+
+.drop1,
+.drop11 {
+    color: var(--hvit);
+    height: fit fit-content;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.droptekst {
+    font-size: 25px;
+}
+
+.fa-circle-user {
+    font-size: 70px;
+}
+
+.droplinje {
+    color: var(--hvit);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+
+
+
 nav {
 	top: 0;
 	width: 100%;
@@ -95,4 +172,62 @@ nav ul li:hover {
 
 footer{
     display: flex;
+}
+
+
+#footerid {
+    background-color: var(--blå);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 30px 40px;
+}
+
+.footer-liste {
+    width: 40%;
+}
+
+.footer-liste h3 {
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-liste h3::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: var(--KARPEprimary);
+}
+
+.footer-liste ul li {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+.footer-linker ul li:hover {
+    color: var(--hvitblå);
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+}
+
+.footer-linker ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-linker ul li a:hover {
+    color: var(--hvitblå);
 }

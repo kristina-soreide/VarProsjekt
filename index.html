@@ -6,23 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-     <nav>
+    <nav>
         <div class="navflex">
             <a href="forside.html"><i class="fa-brands fa-glide"></i></a>
-            hva vil du øve på?
+            <div>
+                <div class="navdel2">
+                    <div class="input-container">
+                        <input type="text" id="søkeord" placeholder="Hva vil du øve på?" />
+                        <button id="søkknapp" onclick="sok()">Søk</button>
+                        <div class="søk-content" id="søkContent"></div>
+                    </div>
+
+                </div>
+            </div>
             send inn spørsmål.
-                <ul>
+            <ul>
                 <li><a href="info.html">KOM I GANG</a></li>
                 <li><a href="html.html">HTML</a></li>
                 <li><a href="java.html">JAVA SCRIPT</a></li>
                 <li><a href="test.html">TEST</a></li>
             </ul>
         </div>
+        <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown-content2">
+            <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
+
+                </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
+
+            </div>
     </nav>
+
+
+
+
+
     <section class="forside">
         <video src="bilder_var/bakgrunn.mp4" muted loop autoplay></video>
         <div class="text">
@@ -34,19 +96,49 @@
             <p>LYKKE TIL!</p>
         </div>
     </section>
-   
     <footer>
-      <div class="kontaktinfo">
-        <h2>Kontak oss</h2>
-        <p>Har du flere spørsmål som ikke blir forklart på nettsiden kan du sende de inn till oss. De beste av de beste skal prøve å svare på best mulig måte. ikke nøl med å sende inn! </p>
-        <p>Mail: guido@hotmail.com</p>
-      </div>
-      <div class="kontaktinfo">
-        <h2>Sosialemedier</h2>
-        <p>Ser du etter mer it relatert informasjon kan du følge oss på våre sosialemedier der vi deler tips å triks for deg.</p>
-        <p>Vi heter guido.tildeg på alle platformer</p>
-      </div>
+        <section id="footerid">
+            <div class="footer">
+                <div class="main">
+                    <div class="footer-liste footer-linker">
+                        <h3>Kontakt oss</h3>
+                        <ul>
+                            <li>Mail: IT.Insider@gmail.com </li>
+                            <li>Telefon: 937 84 934</li>
+                            <li>Kontor: Nadderud VGS</li>
+                        </ul>
+                    </div>
+                    <div class="footer-liste footer-linker">
+                        <h3>Om oss. Vår utvikling</h3>
+                        <ul>
+                            <li>IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens
+                                verden. Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din
+                                pålitelige kilde for teknologiens utvikling.
+
+                                Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
+
+    <footer>
+        <div class="kontaktinfo">
+            <h2>Kontak oss</h2>
+            <p>Har du flere spørsmål som ikke blir forklart på nettsiden kan du sende de inn till oss. De beste av de
+                beste skal prøve å svare på best mulig måte. ikke nøl med å sende inn! </p>
+            <p>Mail: guido@hotmail.com</p>
+        </div>
+        <div class="kontaktinfo">
+            <h2>Sosialemedier</h2>
+            <p>Ser du etter mer it relatert informasjon kan du følge oss på våre sosialemedier der vi deler tips å triks
+                for deg.</p>
+            <p>Vi heter guido.tildeg på alle platformer</p>
+        </div>
+    </footer>
+
 
 </body>
 
