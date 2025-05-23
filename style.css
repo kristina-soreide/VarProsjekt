@@ -133,21 +133,24 @@ ul li:hover ul.dropdown{
     
     padding: 100px;
 }
-.linker{
+/*.linker{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 
 
 }
+*/
 
-footer{
-    display: flex;
-}
+
+
+
+
+
 
 
 #footerid {
-    background-color: var(--blå);
+    background-color: var(--mørkb);
 }
 
 .main {
@@ -178,7 +181,7 @@ footer{
     width: 50px;
     left: 0;
     bottom: -8px;
-    background: var(--KARPEprimary);
+    background: var(--rød);
 }
 
 .footer-liste ul li {
@@ -189,7 +192,7 @@ footer{
 }
 
 .footer-linker ul li:hover {
-    color: var(--hvitblå);
+    color: var(--blå);
     transform: scale(1.05) translateY(2px);
     transition: .4s;
 }
@@ -200,5 +203,5 @@ footer{
 }
 
 .footer-linker ul li a:hover {
-    color: var(--hvitblå);
+    color: var(--blå);
 }
