@@ -52,11 +52,6 @@ nav ul li {
 	text-align: center;
 }
 
-nav img {
-	max-height: 70px;
-	margin: 20px;
-}
-
 nav ul li a {
 	text-decoration: none;
 	color: white;
@@ -69,12 +64,11 @@ nav ul li:hover {
 	
 }
 */
-/*
+
 ul{
     list-style: none;
 
 }
-    */
 ul li{
     display: inline-block;
     position: relative;
@@ -96,6 +90,7 @@ ul li ul.dropdown{
     position: absolute;
     z-index: 999;
     display: none;
+    background-color: var(--mørkb);
 }
 ul li a:hover{
     background-color: var(--blå);
@@ -103,11 +98,6 @@ ul li a:hover{
 }
 ul li:hover ul.dropdown{
     display: block;
-}
-
-
-.pil{
-    font-size: 15px;
 }
 
 
