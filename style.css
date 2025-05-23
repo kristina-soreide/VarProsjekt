@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --blå: #98DFEA;
+    --mørkb: #03254E;
+    --rosa: #FFD1BA;
+    --rød: #750D37;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,90 +16,20 @@
 }
 
 
-.navdel2 {
-    align-items: center;
-}
-
-.navdel3 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.dropdown-content2 {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 0px;
-    z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 350px;
-    text-align: center;
-    background-color: inherit;
-    border: 0px solid var(--hvit);
-}
-
-.dropdown-content2 a {
-    text-decoration: none;
-    font-size: 25px;
-    padding: 5px;
-}
-
-.dropdown-content2>div {
-    border: 1px solid var(--hvit);
-}
-
-
-.dropbtn {
-    background-color: inherit;
-    font-size: 40px;
-    border: none;
-}
-
-.drop1,
-.drop11 {
-    color: var(--hvit);
-    height: fit fit-content;
-    background-color: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.droptekst {
-    font-size: 25px;
-}
-
-.fa-circle-user {
-    font-size: 70px;
-}
-
-.droplinje {
-    color: var(--hvit);
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-}
-
-
-
-
 nav {
 	top: 0;
 	width: 100%;
-	background-color: #233a67;
+	background-color: var(--mørkb);
 	color: white;
 }
 i{
-    color: white;
+    color:white;
     font-size: 50px;
+}
+
+
+.navsøk{
+    align-items: center;
 }
 
 .navflex {
@@ -98,11 +39,7 @@ i{
 	gap: 20px;
     padding: 10px;
 }
-
-nav .navflex {
-	height: auto;
-}
-
+/*
 nav ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -131,6 +68,50 @@ nav ul li:hover {
     text-decoration: underline;
 	
 }
+*/
+/*
+ul{
+    list-style: none;
+
+}
+    */
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background-color: var(--blå);
+
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+.pil{
+    font-size: 15px;
+}
+
+
+
 
 
 .forside{
