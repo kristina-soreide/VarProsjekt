@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="navflex">
+            <a href="index.html"><i class="fa-brands fa-glide"></i></a>
+            <div class="linker">
+                <ul>
+                    <li>
+                        <a href="#">Fagstoff</a>
+                        <ul class="dropdown">
+                            <li><a href="html.html">HTML</a></li>
+                            <li><a href="css.html">CSS</a></li>
+                            <li><a href="java.html">JavaScript</a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#">Tester</a>
+                    </li>
+                    <li><a href="#">Spørsmål?</a></li>
+                </ul>
+            </div>
+
+            <div class="navsøk">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva vil du øve på?" />
+                    <button id="søkknapp" onclick="sok()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="designside">
+        <h1>Design med css</h1>
+        <p>For at en side skal se fin ut trenges css. her er noen tips og enkle triks for å forbedre siden din!</p>
+    </section>
+    <article id="justeringer">
+        <div class="leke venstre">
+            <h2>hei</h2>
+            <p>Høyde og lengden på de ulike elementene på siden din kan justeres for at det skal passe bedre sammen. Her
+                kan
+                du få muligheten til å dra i elementene på siden og se hvordan du kan endre høyde og bredde for å få en
+                finere balanse. </p>
+
+        </div>
+
+        <div class="leke høyre">
+            <h2 class="element">Overskrift</h2>
+            <div class="element">
+                <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eius fugit sunt omnis
+                    consequuntur voluptatibus delectus. Vero recusandae veritatis nulla ad ducimus deserunt minima
+                    cupiditate, sit error illo rerum aut.</b>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2>oppsett til siden</h2>
+        <p>Når du har mange elementer er det enklere å bruke flex eller grid til å endre rekkefølger. Skal du lage en avis eller nettisde med flere elementer er dette et supert verktøy!</p>
+        <div class="flexeks">
+            <div class="boks1"></div>
+            <div class="boks2"></div>
+            <div class="boks3"></div>
+            <div class="boks4"></div>
+        </div>
+        <div class="grideks">
+            <div class="boks1"></div>
+            <div class="boks2"></div>
+            <div class="boks3"></div>
+            <div class="boks4"></div>
+        </div>
+    </article>
+    <article>
+        <section class="tips">
+            <div class="tip">
+                <h3>Bruk Flexbox</h3>
+                <p>Bruk <code>display: flex</code> for å enkelt sentrere og justere elementer.</p>
+            </div>
+            <div class="tip">
+                <h3>Legg til overgang</h3>
+                <p>Med <code>transition</code> får du myke hover-effekter.</p>
+            </div>
+            <div class="tip">
+                <h3>Bruk variabler</h3>
+                <p>Definer <code>--farge</code> i <code>:root</code> for gjenbrukbare farger.</p>
+            </div>
+        </section>
+
+    </article>
+    <article>
+        <h3><b>Effekter</b>på elementer kan løfte siden din og gjøre det både lettere å navigere siden og finere.</h3>
+        <img src="bilder_var/voffs.jpg" alt="">
+    </article>
+
+
+
+
+    <footer>
+        <div class="kontaktinfo">
+            <h3>Kontakt oss</h3>
+            <ul>
+                <li>Mail: guito@gmail.com</li>
+                <li>Telefon: 937 84 934</li>
+                <li>Kontor: Nadderud VGS</li>
+            </ul>
+        </div>
+        <div class="kontaktinfo">
+            <h3>Om oss. Vår utvikling</h3>
+            <ul>
+                <li>
+                    IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens verden.
+                    Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din pålitelige kilde
+                    for teknologiens utvikling.
+
+                    Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

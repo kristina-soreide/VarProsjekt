@@ -7,7 +7,7 @@
     --rød: #750D37;
 }
 
-
+/*standar reset*/
 
 *{
     margin: 0;
@@ -15,12 +15,18 @@
     box-sizing: border-box;
 }
 
+body{
+    padding-top: 80px;
+}
 
+/*nav bar css*/
 nav {
 	top: 0;
 	width: 100%;
 	background-color: var(--mørkb);
 	color: white;
+    position: fixed;
+    z-index: 10000;
 }
 i{
     color:white;
@@ -39,36 +45,17 @@ i{
 	gap: 20px;
     padding: 10px;
 }
-/*
-nav ul {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
-	list-style: none;
-}
 
-nav ul li {
-	flex: 1 1 auto;
-	text-align: center;
-}
-
-nav ul li a {
-	text-decoration: none;
-	color: white;
-	font-size: 1.5em;
-	text-align: center;
-}
 
 nav ul li:hover {
     text-decoration: underline;
 	
 }
-*/
 
 ul{
     list-style: none;
-
 }
+
 ul li{
     display: inline-block;
     position: relative;
@@ -101,7 +88,7 @@ ul li:hover ul.dropdown{
 }
 
 
-
+/*navbar css*/
 
 
 .forside{
@@ -133,49 +120,34 @@ ul li:hover ul.dropdown{
     
     padding: 100px;
 }
-/*.linker{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-
-}
-*/
 
 
 
+/*footer css*/
 
-
-
-
-
-#footerid {
+footer {
     background-color: var(--mørkb);
-}
-
-.main {
+    padding: 30px 40px;
+    gap: 40px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer {
-    padding: 30px 40px;
-}
 
-.footer-liste {
+.kontaktinfo {
     width: 40%;
 }
 
-.footer-liste h3 {
+.kontaktinfo h3 {
     font-size: 1.2rem;
     color: white;
-    position: relative;
     margin-bottom: 25px;
+    position: relative;
     font-family: Arial, sans-serif;
 }
 
-.footer-liste h3::before {
-    content: "";
+.kontaktinfo h3::before {
+    content: "";    /* hentet fra avis footer, handler om å legge på et element. streken under overskriften*/
     position: absolute;
     height: 2px;
     width: 50px;
@@ -184,24 +156,87 @@ ul li:hover ul.dropdown{
     background: var(--rød);
 }
 
-.footer-liste ul li {
+.kontaktinfo ul li {
     color: white;
     font-family: Arial, sans-serif;
     font-size: 0.85rem;
     margin-top: 10px;
+    transition: .4s;
+
 }
 
-.footer-linker ul li:hover {
+.kontaktinfo ul li:hover {
     color: var(--blå);
     transform: scale(1.05) translateY(2px);
-    transition: .4s;
 }
 
-.footer-linker ul li a {
-    color: white;
-    text-decoration: none;
+/*css til css siden om design*/
+#designside{
+    text-align: center;
+    margin: 30px;
+}
+#justeringer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.element{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--rosa);
+    border: 2px solid var(--mørkb);
+    border-radius: 20px;
+    resize: both;
+    overflow: hidden;
+    margin: 20px;
+}
+.leke {
+    border: 2px solid var(--mørkb);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    /* fjern flex: 1; */
 }
 
-.footer-linker ul li a:hover {
-    color: var(--blå);
+.venstre {
+    background-color: var(--rosa);
+    flex: 0 0 300px; /* fast bredde, kan justeres */
+}
+
+.høyre {
+    background-color: var(--blå);
+    flex: 1; /* Tar resten av plassen */
+    min-width: 0; /* Viktig for at innhold ikke "sprenger" boksen */
+    overflow: auto;
+}
+
+/*Chats ide*/
+.tips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.tip {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.tip:hover {
+  transform: scale(1.05);
+  background-color: #d0eaff;
+}
+
+code {
+  background-color: #e0e0e0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
 }

@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <nav>
+        <div class="navflex">
+            <a href="index.html"><i class="fa-brands fa-glide"></i></a>
+            <div class="linker">
+                <ul>
+                    <li>
+                        <a href="#">Fagstoff</a>
+                        <ul class="dropdown">
+                            <li><a href="html.html">HTML</a></li>
+                            <li><a href="css.html">CSS</a></li>
+                            <li><a href="java.html">JavaScript</a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#">Tester</a>
+                    </li>
+                    <li><a href="#">Spørsmål?</a></li>
+                </ul>
+            </div>
+
+            <div class="navsøk">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva vil du øve på?" />
+                    <button id="søkknapp" onclick="sok()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<p>hei</p>
+
+
+
+    <footer>
+        <div class="kontaktinfo">
+            <h3>Kontakt oss</h3>
+            <ul>
+                <li>Mail: guito@gmail.com</li>
+                <li>Telefon: 937 84 934</li>
+                <li>Kontor: Nadderud VGS</li>
+            </ul>
+        </div>
+        <div class="kontaktinfo">
+            <h3>Om oss. Vår utvikling</h3>
+            <ul>
+                <li>
+                    IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens verden.
+                    Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din pålitelige kilde
+                    for teknologiens utvikling.
+
+                    Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
