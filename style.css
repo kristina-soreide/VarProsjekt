@@ -18,6 +18,10 @@
 body{
     padding-top: 80px;
 }
+h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
 
 /*nav bar css*/
 nav {
@@ -117,7 +121,8 @@ ul li:hover ul.dropdown{
 .text{
     position: relative;
     z-index: 10;
-    
+    backdrop-filter: blur(50px);
+    border: 2px solid var(--blå);
     padding: 100px;
 }
 
