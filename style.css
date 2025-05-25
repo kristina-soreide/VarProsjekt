@@ -56,15 +56,15 @@ nav ul li:hover {
 	
 }
 
-ul{
+.linker ul{
     list-style: none;
 }
 
-ul li{
+.linker ul li{
     display: inline-block;
     position: relative;
 }
-ul li a{
+.linker ul li a{
     display: block;
     padding: 20px 25px;
     color: white;
@@ -73,21 +73,21 @@ ul li a{
     font-size: 20px;
 }
 
-ul li ul.dropdown li{
+.linker ul li ul.dropdown li{
     display: block;
 }
-ul li ul.dropdown{
+.linker ul li ul.dropdown{
     width: 100%;
     position: absolute;
-    z-index: 999;
+    z-index: 1000;
     display: none;
     background-color: var(--mørkb);
 }
-ul li a:hover{
+.linker ul li a:hover{
     background-color: var(--blå);
 
 }
-ul li:hover ul.dropdown{
+.linker ul li:hover ul.dropdown{
     display: block;
 }
 
