@@ -216,32 +216,75 @@ footer {
     overflow: auto;
 }
 
-/*Chats ide*/
-.tips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  justify-content: center;
-}
 
-.tip {
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  padding: 15px;
-  width: 250px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, background-color 0.3s ease;
-}
+.outer-container {
+    display: flex;
+    gap: 40px;
+  }
 
-.tip:hover {
-  transform: scale(1.05);
-  background-color: #d0eaff;
-}
+  .flexeks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 400px;
+  }
 
-code {
-  background-color: #e0e0e0;
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-family: monospace;
-}
+  .flex-box1, .flex-box4 {
+    flex: 1 1 100%;
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .flex-box2, .flex-box3 {
+    flex: 1 1 48%;
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .flex-box1 { background-color: lightcoral; }
+  .flex-box2 { background-color: lightblue; }
+  .flex-box3 { background-color: lightgreen; }
+  .flex-box4 { background-color: khaki; }
+
+  .grideks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    width: 400px;
+  }
+
+  .box1 {
+    grid-column: 1 / 3;
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+  }
+
+  .box2 {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+  }
+
+  .box3 {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+  }
+
+  .box4 {
+    grid-column: 1 / 3;
+    background-color: khaki;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+  }
+
+  /* html side css*/
+  
