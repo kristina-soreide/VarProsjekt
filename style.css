@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 body{
@@ -21,6 +22,9 @@ body{
 h1{
     margin-bottom: 10px;
     font-size: 50px;
+}
+h2{
+    margin-bottom: 20px;
 }
 
 /*nav bar css*/
@@ -92,9 +96,7 @@ nav ul li:hover {
 }
 
 
-/*navbar css*/
-
-
+/*Første side css*/
 .forside{
     position: relative;
     right: 0;
@@ -129,7 +131,6 @@ nav ul li:hover {
 
 
 /*footer css*/
-
 footer {
     background-color: var(--mørkb);
     padding: 30px 40px;
@@ -137,7 +138,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 .kontaktinfo {
     width: 40%;
@@ -175,116 +175,101 @@ footer {
     transform: scale(1.05) translateY(2px);
 }
 
+
+
 /*css til css siden om design*/
 #designside{
     text-align: center;
-    margin: 30px;
+    margin: 30px auto;
+    max-width: 800px;
 }
+
 #justeringer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
+    gap: 20px;
 }
+.leke {
+    border: 2px solid var(--mørkb);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--rosa);
+    flex: 1 1 300px;
+    max-width: 600px;
+    min-width: 280px;
+    /* fjern flex: 1; */
+}
+
+.høyre {
+    background-color: var(--blå);
+    flex: 2 1 400px;
+    overflow: auto;
+}
+
 .element{
     text-align: center;
     padding: 20px;
     background-color: var(--rosa);
     border: 2px solid var(--mørkb);
     border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
     resize: both;
     overflow: hidden;
-    margin: 20px;
-}
-.leke {
-    border: 2px solid var(--mørkb);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    /* fjern flex: 1; */
 }
 
-.venstre {
-    background-color: var(--rosa);
-    flex: 0 0 300px; /* fast bredde, kan justeres */
+#triks{
+    padding: 50px 20px;
+    text-align: center;
 }
-
-.høyre {
-    background-color: var(--blå);
-    flex: 1; /* Tar resten av plassen */
-    min-width: 0; /* Viktig for at innhold ikke "sprenger" boksen */
-    overflow: auto;
-}
-
-
-.outer-container {
-    display: flex;
-    gap: 40px;
-  }
-
-  .flexeks {
+.effekter{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    width: 400px;
-  }
-
-  .flex-box1, .flex-box4 {
-    flex: 1 1 100%;
-    border: 2px solid #333;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.pop{
+    border: 2px solid var(--mørkb);
+    width: 300px;
     padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+    /*
     text-align: center;
-  }
+    margin: 30px;*/
+}
+.opp:hover{
+    box-shadow: 12px 12px 12px var(--mørkb), 
+    -10px -1px 10px whitesmoke;
+}
+.ned:hover{
+    box-shadow: 12px 12px 12px var(--mørkb) inset, 
+    -10px -1px 10px whitesmoke inset;
+}
 
-  .flex-box2, .flex-box3 {
-    flex: 1 1 48%;
-    border: 2px solid #333;
-    padding: 20px;
+.wrapper{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin: 40px auto;
+    padding: 10px;
+    max-width: 300px;
+}
+.kort{
+    padding: 20px 30px;
+    flex-shrink: 0;
+    width: 300px;
+    background-color: var(--rosa);
+    border-radius: 14px;
     text-align: center;
-  }
+}
 
-  .flex-box1 { background-color: lightcoral; }
-  .flex-box2 { background-color: lightblue; }
-  .flex-box3 { background-color: lightgreen; }
-  .flex-box4 { background-color: khaki; }
 
-  .grideks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-    width: 400px;
-  }
-
-  .box1 {
-    grid-column: 1 / 3;
-    background-color: lightcoral;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #333;
-  }
-
-  .box2 {
-    background-color: lightblue;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #333;
-  }
-
-  .box3 {
-    background-color: lightgreen;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #333;
-  }
-
-  .box4 {
-    grid-column: 1 / 3;
-    background-color: khaki;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #333;
-  }
 
   /* html side css*/
   

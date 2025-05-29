@@ -66,48 +66,36 @@
         </div>
     </article>
 
-    <article>
-        <h2>Oppsett til siden</h2>
-        <p>Når du har mange elementer er det enklere å bruke flex eller grid til å endre rekkefølger. Skal du lage en
-            avis eller nettisde med flere elementer er dette et supert verktøy!</p>
-        <div class="outer-container">
-            <div class="flexeks">
-                <div class="flex-box1">Lang boks øverst</div>
-                <div class="flex-box2">Liten boks venstre</div>
-                <div class="flex-box3">Liten boks høyre</div>
-                <div class="flex-box4">Lang boks nederst</div>
-            </div>
+    <article id="triks">
+        <h2>Effekter på elementer kan løfte siden din og gjøre den finere og lettere å navigere</h2>
+        <div class="effekter">
+            <p class="pop opp">Elementer kan poppe frem!</p>
+            <p class="pop ned">Elementer kan synke!</p>
+            <p>Her brukes da <code>box-shadow</code> for å lage en skygge rundt elementet. For at skyggen skal poppefrem kun når du er nær elementet brukes <code>hover.</code>
+                Bak klassen til elementet skriver du :hover før parantesen{. Dermed når brukeren hovrer elementet synes skyggen.</p>
+        </div>
+            <button>Darkmode</button><button>Ligthmode</button>
+    </article>
 
-            <div class="grideks">
-                <div class="box1">Lang boks øverst</div>
-                <div class="box2">Liten boks venstre</div>
-                <div class="box3">Liten boks høyre</div>
-                <div class="box4">Lang boks nederst</div>
+    <article>
+        <div class="wrapper">
+            <div class="kort">
+                <h2>Siste css tips</h2>
+                <p>Bla videre</p>
+            </div>
+            <div class="kort">
+                <h2>Det er viktig å huske:</h2>
+                <p>Ha bilder i samme fil som nettsiden.</p>
+            </div>
+            <div class="kort">
+                <h2>Det er viktig å huske:</h2>
+                <p><code>.class</code> kan brukes for å style flere elementer. <code>#id</code> brukes på ett element og overstrider klassen.</p>
+            </div>
+            <div class="kort">
+                <h2>Det er viktig å huske:</h2>
+                <p>Gjør nettsiden din lesbar med andre enheter en pc. Bruk <code>@media</code> for å gjøre siden mobil vennlig også.</p>
             </div>
         </div>
-    </article>
-    <article>
-        <section class="tips">
-            <div class="tip">
-                <h3>Bruk Flexbox</h3>
-                <p>Bruk <code>display: flex</code> for å enkelt sentrere og justere elementer.</p>
-            </div>
-            <div class="tip">
-                <h3>Legg til overgang</h3>
-                <p>Med <code>transition</code> får du myke hover-effekter.</p>
-            </div>
-            <div class="tip">
-                <h3>Bruk variabler</h3>
-                <p>Definer <code>--farge</code> i <code>:root</code> for gjenbrukbare farger.</p>
-            </div>
-        </section>
-
-    </article>
-    <article>
-        <h3><b>Effekter</b>på elementer kan løfte siden din og gjøre det både lettere å navigere siden og finere.</h3>
-        <p>Elementer kan poppe frem!</p>
-        <p>Elementer kan synke</p>
-        <button>Darkmode</button><button>Ligthmode</button>
     </article>
 
 
