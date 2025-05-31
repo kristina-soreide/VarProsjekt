@@ -42,54 +42,79 @@
             </div>
         </div>
     </nav>
-
     <main>
-        <h1>HTML</h1>
+        <h1 id="toppen">HTML</h1>
+
         <div class="temaer">
-            <p>Vi skal nå gå gjennom ulike temaer:</p>
+            <h2>Vi skal gå gjennom ulike temaer:</h2>
+            <p>På denne siden lærer du grunnleggende HTML-koding. Vi tar for oss:</p>
             <ul>
-                <li>Struktur</li>
-                <li>Lister</li>
-                <li>Videoer og Bilder</li>
-                <li>Lyd</li>
+                <li>Lister – hvordan lage nummererte og ikke-nummererte lister</li>
+                <li>Struktur – hvorfor semantiske tagger er viktige</li>
+                <li>Videoer og Bilder – hvordan legge til media på siden</li>
+                <li>Lyd – innsetting av lydfiler</li>
             </ul>
         </div>
-            
-        <p>For å lage den oversikten måtte jeg bruke lister. Det finnes to typer lister:</p>
-        <ol>
-            <li>Nummerert</li>
-        </ol>
-        <ul>
-            <li>Ikke nummerert</li>
-        </ul>
-        <p>Da har vi kodene <code>ol</code> og <code>ul</code>.</p>
-        <p>Huskeregel for å vite nummerert og ikke nummerert er <code>ul</code> <b>U</b>nummerert</p>
-    </main>
+
+        <article>
+
+            <h2>Struktur</h2>
+            <p>Når du skriver HTML, er det smart å bruke semantiske tagger. Dette betyr at du bruker tagger som gir
+                mening for innholdet, som for eksempel <code>&lt;header&gt;</code> for toppdelen av siden,
+                <code>&lt;nav&gt;</code> for navigasjon, <code>&lt;main&gt;</code> for hovedinnholdet, og
+                <code>&lt;footer&gt;</code> for bunnen av siden.</p>
+            <p>Dette gjør koden lettere å forstå, og det hjelper søkemotorer og skjermlesere å finne fram på siden din.
+            </p>
+        </article>
 
 
+        <article>
+                <h2>Lenker</h2>
+                <p>Lenker er det som gjør nettsider koblet sammen. Du lager en lenke med <code>&lt;a&gt;</code>-taggen.
+                </p>
+                <p>For eksempel kan du lage en lenke til VG med denne koden:</p>
+                <pre><code>&lt;a href="https://www.vg.no" target="_blank" rel="noopener noreferrer"&gt;Gå til VG&lt;/a&gt;</code></pre>
+                <p><em>Target="_blank"</em> gjør at lenken åpnes i ny fane, og <em>rel="noopener noreferrer"</em> øker
+                    sikkerheten.</p>
+        </article>
 
-    <footer>
-        <div class="kontaktinfo">
-            <h3>Kontakt oss</h3>
-            <ul>
-                <li>Mail: guito@gmail.com</li>
-                <li>Telefon: 937 84 934</li>
-                <li>Kontor: Nadderud VGS</li>
-            </ul>
-        </div>
-        <div class="kontaktinfo">
-            <h3>Om oss. Vår utvikling</h3>
-            <ul>
-                <li>
-                    IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens verden.
-                    Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din pålitelige kilde
-                    for teknologiens utvikling.
 
-                    Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.
-                </li>
-            </ul>
-        </div>
-    </footer>
+        <article>
+            <h2>Tekstformatering</h2>
+            <p>Du kan gjøre teksten din fet eller kursiv med disse taggene:</p>
+            <p><b>Fet tekst</b> lages med <code>&lt;b&gt;</code> eller <code>&lt;strong&gt;</code>.</p>
+            <p><i>Kursiv tekst</i> lages med <code>&lt;i&gt;</code> eller <code>&lt;em&gt;</code>.</p>
+            <p>Det er også mulig å understreke tekst med CSS, men HTML-taggen <code>&lt;u&gt;</code> brukes sjeldent i
+                dag.</p>
+
+        </article>
+
+
+        <a id="tiltopp" href="#toppen">↑ Til toppen</a>
+
+        <footer>
+            <div class="kontaktinfo">
+                <h3>Kontakt oss</h3>
+                <ul>
+                    <li>Mail: guito@gmail.com</li>
+                    <li>Telefon: 937 84 934</li>
+                    <li>Kontor: Nadderud VGS</li>
+                </ul>
+            </div>
+            <div class="kontaktinfo">
+                <h3>Om oss. Vår utvikling</h3>
+                <ul>
+                    <li>
+                        IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens verden.
+                        Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din pålitelige kilde
+                        for teknologiens utvikling.
+
+                        Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
