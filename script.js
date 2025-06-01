@@ -7,30 +7,34 @@ function makePink() {
 
 
 /*js til test*/
-const spørsmål[
+const question=[
     {
-        spørsmål: "Hvem er du?",
+        question: "Hvem er du?",
         svar: [
-            { text: "Lærer", correct:false}
-            { text: "Lærer", correct:true}
-            { text: "Lærer", correct:false}
-            { text: "Lærer", correct:false}
+            { text: "Lærer", correct:false},
+            { text: "Lærer", correct:true},
+            { text: "Lærer", correct:false},
+            { text: "Lærer", correct:false},
         ]
     },
     {
-        spørsmål: "Hvem er du?",
+         question: "Hvem er du?",
         svar: [
-            { text: "Lærer", correct:false}
-            { text: "Lærer", correct:true}
-            { text: "Lærer", correct:false}
-            { text: "Lærer", correct:false}
+            { text: "Lærer", correct:false},
+            { text: "Lærer", correct:true},
+            { text: "Lærer", correct:false},
+            { text: "Lærer", correct:false},
+        ]
     },
     {
-        spørsmål: "Hvem er du?",
+        question: "Hvem er du?",
         svar: [
-            { text: "Lærer", correct:false}
-            { text: "Lærer", correct:true}
-            { text: "Lærer", correct:false}
-            { text: "Lærer", correct:false}
+            { text: "Lærer", correct:false},
+            { text: "Lærer", correct:true},
+            { text: "Lærer", correct:false},
+            { text: "Lærer", correct:false},
+        ]
     }
 ];
+
+const questionEL= document.getElementById("question");
