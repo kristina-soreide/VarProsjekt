@@ -384,11 +384,14 @@ footer {
     cursor: pointer;
     transition: all 0.3s;
 }
-.btn:hover{
+.btn:hover:not([disabled]){
     background-color: #03254E;
     color: white;
 }
-#next{
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
     background-color: var(--mørkb);
     color: var(--rosa);
     width: 150px;
@@ -398,4 +401,10 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     display: none;
+}
+.correct{
+    background: royalblue;
+}
+.incorrect{
+    background: red;
 }
