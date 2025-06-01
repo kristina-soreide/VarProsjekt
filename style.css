@@ -356,55 +356,59 @@ footer {
 
 /* css til test*/
 
-.app{
-    width: 90%;
-    background-color: var(--rosa);
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
+.app {
+  width: 90%;
+  background-color: var(--rosa);
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
 }
-.app h1{
-    color: var(--mørkb);
-    border-bottom: 1px solid var(--rød);
-    padding-bottom: 30px;
+
+.app h1 {
+  color: var(--mørkb);
+  border-bottom: 1px solid var(--rød);
+  padding-bottom: 30px;
 }
-.quiz{
-    padding: 20px 0;
+
+.quiz {
+  padding: 20px 0;
 }
-.btn{
-    background-color: white;
-    color: var(--mørkb);
-    width: 100%;
-    border: 2px solid var(--rød);
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
+
+.btn {
+  background-color: white;
+  color: var(--mørkb);
+  width: 100%;
+  border: 2px solid var(--rød);
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.btn:hover:not([disabled]){
-    background-color: #03254E;
-    color: white;
+
+.btn:hover {
+  background-color: #03254E;
+  color: white;
 }
-.btn:disabled{
-    cursor: no-drop;
+
+#next-btn {
+  background-color: var(--mørkb);
+  color: var(--rosa);
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
 }
-#next-btn{
-    background-color: var(--mørkb);
-    color: var(--rosa);
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
+
+.correct {
+  background: royalblue;
 }
-.correct{
-    background: royalblue;
-}
-.incorrect{
-    background: red;
+
+.incorrect {
+  background: red;
 }
