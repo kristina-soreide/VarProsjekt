@@ -43,15 +43,52 @@
         </div>
     </nav>
 
-<main>
-    <h1>JavaScript</h1>
-    <p>JavaScript gjør siden din mer levende! Knapper på nettsider som viser noe når du klikker? Det er JavaScript!</p>
+    <main>
+        <article class="jscontainer">
+            <h1 class="tittel-hoved">JavaScript</h1>
+            <p class="tekst">JavaScript gjør siden din mer levende! Knapper på nettsider som viser noe når du
+                klikker? Det er JavaScript!</p>
 
-    <article>
-        <p>JavaScript kan ta informasjon å bruke det. Foreksempel lagre informa</p>
-        <div class="boks"></div>
-    </article>
-</main>
+
+            <h2 class="tittel-sekundaer">Hva kan JavaScript gjøre?</h2>
+            <p class="tekst">JavaScript kan ta imot informasjon og bruke den. For eksempel kan vi lagre navn, endre
+                farger og vise meldinger!</p>
+
+            <h3 class="tittel-tertiar">Eksempel: Endre farge på boksen</h3>
+            <p class="tekst">Klikk på boksen for å endre fargen:</p>
+            <div class="boks" onclick="endreFarge()"></div>
+
+            <h3 class="tittel-tertiar">Eksempel: Si hei med navn</h3>
+            <div class="inndata-gruppe">
+                <input type="text" id="navnInput" class="input-tekst" placeholder="Skriv navnet ditt">
+                <button class="knapp" onclick="siHei()">Si hei!</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="wrapper">
+                <div class="kort">
+                    <h2>Siste JavaScript tips</h2>
+                    <p>Bla videre...</p>
+                </div>
+                <div class="kort">
+                    <h2>Det er viktig å huske:</h2>
+                    <p>Legg JavaScript linken i bunnen av body-en</p>
+                </div>
+                <div class="kort">
+                    <h2>Det er viktig å huske:</h2>
+                    <p>Vær nøye med skrivefeil! Mangler du et semikolon eller en parentes, så virker ikke koden.</p>
+                </div>
+                <div class="kort">
+                    <h2>Det er viktig å huske:</h2>
+                    <p>Gjør nettsiden din lesbar med andre enheter en pc. Bruk <code>@media</code> for å gjøre siden
+                        mobil
+                        vennlig også.</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
 
 
 

@@ -338,24 +338,67 @@ footer {
 
 
 /*java side sin css*/
- .boks{
-            width: 200px;
-            height: 200px;
-            border: 2px solid black;
-            background-color: antiquewhite;
-        }
+ .boks {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  background-color: antiquewhite;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
 
  .pinkclass{
             background-color: pink;
             border-radius: 50%;
             transition: 1s;
         }
+        
+.knapp {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--blå);
+  border: none;
+  border-radius: 6px;
+  color: black;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; 
+}
 
+.knapp:hover {
+  background-color: var(--mørkb);
+  color: white;
+}
+.jscontainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px;
+}
+.inndata-gruppe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Input og knapp */
+.input-tekst {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
 
 
 /* css til test*/
-
 .app {
   width: 90%;
   background-color: var(--rosa);

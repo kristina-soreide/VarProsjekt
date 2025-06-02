@@ -7,6 +7,10 @@ function makePink() {
   boksEL.classList.toggle("pinkclass");
 }
 
+function siHei() {
+      const navn = document.getElementById("navnInput").value;
+      alert("Hei, " + navn + "!");
+}
 
 /*js til test*/
 const questions = [
