@@ -434,6 +434,28 @@ img{
 
 
 /*java side sin css*/
+.jscontainer {
+  max-width: 1100px;       /* Litt bredere */
+  margin: 0 auto;          /* Sentraliserer containeren */
+  padding: 20px;
+  display: block;          /* Fjern flex og midtstilling */
+}
+.flex-rad {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;       /* Så det ikke krasjer på små skjermer */
+  margin-bottom: 30px;
+}
+
+.flex-rad .boks {
+  flex-shrink: 0;        /* Ikke krymp boksen */
+}
+
+.flex-rad .tekst {
+  flex: 1;               /* Teksten fyller resten av plassen */
+  min-width: 250px;
+}
 .boks {
     width: 200px;
     height: 200px;
@@ -466,15 +488,6 @@ img{
     color: white;
 }
 
-.jscontainer {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
 
 .inndata-gruppe {
     display: flex;
@@ -484,8 +497,6 @@ img{
     flex-wrap: wrap;
     gap: 10px;
 }
-
-/* Input og knapp */
 .input-tekst {
     padding: 10px;
     width: 60%;
