@@ -36,89 +36,82 @@
     </nav>
 
 
-    <main>
-        <main class="innhold">
-            <article class="jscontainer">
+    <main class="innhold">
+        <article>
+            <h1>JavaScript</h1>
+            <p class="forklaring">JavaScript gjør nettsiden din mer levende! Når du klikker, skriver inn tekst eller
+                beveger musa, er
+                det JavaScript som styrer det.</p>
 
-                <h1>JavaScript</h1>
-                <p>JavaScript gjør nettsiden din mer levende! Når du klikker, skriver inn tekst eller beveger musa, er
-                    det JavaScript som styrer det.</p>
+            <section class="seksjon">
+                <h2>Hva kan JavaScript gjøre?</h2>
+                <p>JavaScript kan reagere på brukerhandlinger som klikk, skrivefelt, og endre stil på elementer. Det
+                    kan også lagre verdier og vise meldinger.</p>
+            </section>
 
-                <section class="seksjon">
-                    <h2>Hva kan JavaScript gjøre?</h2>
-                    <p>JavaScript kan reagere på brukerhandlinger som klikk, skrivefelt, og endre stil på elementer. Det
-                        kan også lagre verdier og vise meldinger.</p>
-                </section>
-
-                <section class="seksjon flex-rad">
-                    <div class="boks" onclick="endreFarge()"></div>
-                    <div class="tekst">
-                        <h3>Eksempel: Endre farge på boksen</h3>
-                        <p>Klikk på boksen for å endre farge. Dette viser hvordan JavaScript kan gjøre siden interaktiv.
-                        </p>
-                    </div>
-                </section>
-
-                <section class="seksjon">
-                    <h3>Eksempel: Si hei med navn</h3>
-                    <p>Skriv navnet ditt i boksen under og få en personlig hilsen når du klikker på knappen.</p>
-                    <div class="inndata-gruppe">
-                        <input type="text" id="navnInput" class="input-tekst" placeholder="Skriv navnet ditt her">
-                        <button class="knapp" onclick="siHei()">Si hei!</button>
-                    </div>
-                </section>
-
-            </article>
-            <article>
-                <div class="wrapper">
-                    <div class="kort">
-                        <h2>Siste JavaScript tips</h2>
-                        <p>Bla videre...</p>
-                    </div>
-                    <div class="kort">
-                        <h2>Det er viktig å huske:</h2>
-                        <p>Legg JavaScript linken i bunnen av body-en</p>
-                    </div>
-                    <div class="kort">
-                        <h2>Det er viktig å huske:</h2>
-                        <p>Vær nøye med skrivefeil! Mangler du et semikolon eller en parentes, så virker ikke koden.</p>
-                    </div>
-                    <div class="kort">
-                        <h2>Det er viktig å huske:</h2>
-                        <p>Gjør nettsiden din lesbar med andre enheter en pc. Bruk <code>@media</code> for å gjøre siden
-                            mobil
-                            vennlig også.</p>
-                    </div>
+            <section class="seksjon flex-rad">
+                <div class="boks" onclick="endreFarge()"></div>
+                <div class="tekst">
+                    <h3>Eksempel: Endre farge på boksen</h3>
+                    <p>Klikk på boksen for å endre farge. Dette viser hvordan JavaScript kan gjøre siden interaktiv.
+                    </p>
                 </div>
-            </article>
+            </section>
 
-        </main>
+            <section class="seksjon">
+                <h3>Eksempel 2: Si hei med navn</h3>
+                <p>Skriv navnet ditt i boksen under og få en personlig hilsen når du klikker på knappen.</p>
+                <div class="inndata-gruppe">
+                    <input type="text" id="navnInput" class="input-tekst" placeholder="Skriv navnet ditt her">
+                    <button class="knapp" onclick="siHei()">Si hei!</button>
+                </div>
+            </section>
+        </article>
 
-
-
-        <footer>
-            <div class="kontaktinfo">
-                <h3>Kontakt oss</h3>
-                <ul>
-                    <li>Mail: guito@gmail.com</li>
-                    <li>Telefon: 937 84 934</li>
-                    <li>Kontor: Nadderud VGS</li>
-                </ul>
+        <article>
+            <div class="wrapper">
+                <div class="kort">
+                    <h2>Siste JavaScript tips</h2>
+                    <p>Bla videre...</p>
+                </div>
+                <div class="kort">
+                    <h2>Det er viktig å huske:</h2>
+                    <p>Legg JavaScript linken i bunnen av body-en</p>
+                </div>
+                <div class="kort">
+                    <h2>Det er viktig å huske:</h2>
+                    <p>Vær nøye med skrivefeil! Mangler du et semikolon eller en parentes, så virker ikke koden.</p>
+                </div>
             </div>
-            <div class="kontaktinfo">
-                <h3>Om oss. Vår utvikling</h3>
-                <ul>
-                    <li>
-                        IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens verden.
-                        Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din pålitelige kilde
-                        for teknologiens utvikling.
+        </article>
 
-                        Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <script src="script.js"></script>
+    </main>
+
+
+
+    <footer>
+        <div class="kontaktinfo">
+            <h3>Kontakt oss</h3>
+            <ul>
+                <li>Mail: guito@gmail.com</li>
+                <li>Telefon: 937 84 934</li>
+                <li>Kontor: Nadderud VGS</li>
+            </ul>
+        </div>
+        <div class="kontaktinfo">
+            <h3>Om oss. Vår utvikling</h3>
+            <ul>
+                <li>
+                    IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens verden.
+                    Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din pålitelige kilde
+                    for teknologiens utvikling.
+
+                    Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
