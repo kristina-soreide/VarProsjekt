@@ -9,73 +9,82 @@
 
 /*standar reset*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: 1.5;
 }
 
-body{
+body {
     padding-top: 80px;
 }
-h1{
-    margin-bottom: 10px;
+
+h1 {
+    margin-bottom: 30px;
     font-size: 50px;
+    color: var(--mørkb);
+    text-align: center;
+
 }
-h2{
+
+h2 {
     margin-bottom: 20px;
 }
 
-code{
-    background-color: grey;
+p {
+    margin-bottom: 15px;
 }
-main{
-     paddding: 10px;
+
+code {
+    background-color: var(--blå);
+    border-left: 4px solid var(--rosa);
 }
 
 /*nav bar css*/
 nav {
-	top: 0;
-	width: 100%;
-	background-color: var(--mørkb);
-	color: white;
+    top: 0;
+    width: 100%;
+    background-color: var(--mørkb);
+    color: white;
     position: fixed;
     z-index: 10000;
 }
-i{
-    color:white;
+
+i {
+    color: white;
     font-size: 50px;
 }
 
 
-.navsøk{
+.navsøk {
     align-items: center;
 }
 
 .navflex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     padding: 10px;
 }
 
 
 nav ul li:hover {
     text-decoration: underline;
-	
+
 }
 
-.linker ul{
+.linker ul {
     list-style: none;
 }
 
-.linker ul li{
+.linker ul li {
     display: inline-block;
     position: relative;
 }
-.linker ul li a{
+
+.linker ul li a {
     display: block;
     padding: 20px 25px;
     color: white;
@@ -84,27 +93,30 @@ nav ul li:hover {
     font-size: 20px;
 }
 
-.linker ul li ul.dropdown li{
+.linker ul li ul.dropdown li {
     display: block;
 }
-.linker ul li ul.dropdown{
+
+.linker ul li ul.dropdown {
     width: 100%;
     position: absolute;
     z-index: 1000;
     display: none;
     background-color: var(--mørkb);
 }
-.linker ul li a:hover{
+
+.linker ul li a:hover {
     background-color: var(--blå);
 
 }
-.linker ul li:hover ul.dropdown{
+
+.linker ul li:hover ul.dropdown {
     display: block;
 }
 
 
 /*Første side css*/
-.forside{
+.forside {
     position: relative;
     right: 0;
     width: 100%;
@@ -117,7 +129,8 @@ nav ul li:hover {
     background-color: white;
     color: white;
 }
-.forside video{
+
+.forside video {
     position: absolute;
     top: 0;
     left: 0;
@@ -127,7 +140,8 @@ nav ul li:hover {
     z-index: -1;
     opacity: 0.9;
 }
-.text{
+
+.text {
     position: relative;
     z-index: 10;
     backdrop-filter: blur(50px);
@@ -159,7 +173,8 @@ footer {
 }
 
 .kontaktinfo h3::before {
-    content: "";    /* hentet fra avis footer, handler om å legge på et element. streken under overskriften*/
+    content: "";
+    /* hentet fra avis footer, handler om å legge på et element. streken under overskriften*/
     position: absolute;
     height: 2px;
     width: 50px;
@@ -183,21 +198,86 @@ footer {
 }
 
 
+/*html side sin css*/
+.innhold {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.temaer {
+    background-color: var(--rød);
+    color: white;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(50, 13, 55, 0.7);
+}
+
+.temaer ul {
+    margin-top: 10px;
+    list-style: inside square;
+    font-weight: 600;
+}
+
+.artikkel {
+    margin-bottom: 40px;
+}
+
+.artikkel h2 {
+    border-bottom: 1px solid var(--rød);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.artikkel p {
+    margin-bottom: 15px;
+}
+
+.artikkel pre {
+    padding: 12px;
+    border-radius: 6px;
+}
+
+
+#tiltopp {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 40px auto;
+    color: white;
+    background-color: var(--rød);
+    padding: 12px 20px;
+    border-radius: 25px;
+    width: 150px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(70, 13, 55, 0.6);
+    transition: background-color 0.3s ease;
+}
+
+#tiltopp:hover {
+    background-color: var(--mørkb);
+    cursor: pointer;
+}
+
+
 
 /*css til css siden om design*/
-#designside{
+#designside {
     text-align: center;
     margin: 30px auto;
     max-width: 800px;
 }
 
-#justeringer{
+#justeringer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     gap: 20px;
 }
+
 .leke {
     border: 2px solid var(--mørkb);
     border-radius: 10px;
@@ -215,7 +295,7 @@ footer {
     overflow: auto;
 }
 
-.element{
+.element {
     text-align: center;
     padding: 20px;
     background-color: var(--rosa);
@@ -226,6 +306,7 @@ footer {
     resize: both;
     overflow: hidden;
 }
+
 .element-container {
     display: flex;
     flex-wrap: wrap;
@@ -233,18 +314,20 @@ footer {
     justify-content: center;
 }
 
-#triks{
+#triks {
     padding: 50px 20px;
     text-align: center;
 }
-.effekter{
+
+.effekter {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
-.pop{
+
+.pop {
     border: 2px solid var(--mørkb);
     width: 300px;
     padding: 20px;
@@ -254,15 +337,18 @@ footer {
     text-align: center;
     margin: 30px;*/
 }
-.opp:hover{
-    box-shadow: 12px 12px 12px var(--mørkb), 
-    -10px -1px 10px whitesmoke;
+
+.opp:hover {
+    box-shadow: 12px 12px 12px var(--mørkb),
+        -10px -1px 10px whitesmoke;
 }
-.ned:hover{
-    box-shadow: 12px 12px 12px var(--mørkb) inset, 
-    -10px -1px 10px whitesmoke inset;
+
+.ned:hover {
+    box-shadow: 12px 12px 12px var(--mørkb) inset,
+        -10px -1px 10px whitesmoke inset;
 }
-.forklaring{
+
+.forklaring {
     max-width: 800px;
     margin: 20px auto;
     text-align: left;
@@ -271,7 +357,7 @@ footer {
 }
 
 /*tips boks*/
-.wrapper{
+.wrapper {
     display: flex;
     gap: 20px;
     width: 300px;
@@ -280,7 +366,8 @@ footer {
     margin: 40px auto;
     padding: 10px;
 }
-.kort{
+
+.kort {
     scroll-snap-align: center;
     padding: 20px 30px;
     flex-shrink: 0;
@@ -289,172 +376,141 @@ footer {
     border-radius: 14px;
     text-align: center;
 }
+
 /*responsivt */
 @media (max-with:768px) {
-    #justeringer{
+    #justeringer {
         flex-direction: column;
         align-items: center;
     }
-    .effekter{
+
+    .effekter {
         flex-direction: column;
     }
-    
+
 }
 
 
-/*html side sin css*/
-  .temaer {
-    background-color: var(--rød);
-    color: white;
-    border-radius: 12px;
-    padding: 20px 25px;
-    margin-bottom: 50px;
-    box-shadow: 0 0 10px rgba(117, 13, 55, 0.7);
-  }
-
-  .temaer ul {
-    margin-top: 10px;
-    list-style: inside square;
-    font-weight: 600;
-  }
-
-  #tiltopp {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    margin: 40px auto;
-    color: white;
-    background-color: var(--rød);
-    padding: 12px 20px;
-    border-radius: 25px;
-    width: 150px;
-    font-weight: 600;
-    box-shadow: 0 3px 8px rgba(117, 13, 55, 0.6);
-    transition: background-color 0.3s ease;
-  }
-
-  #tiltopp:hover {
-    background-color: var(--mørkb);
-    cursor: pointer;
-  }
 
 
 /*java side sin css*/
- .boks {
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
-  background-color: antiquewhite;
-  margin-bottom: 20px;
-  cursor: pointer;
+.boks {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
- .pinkclass{
-            background-color: pink;
-            border-radius: 50%;
-            transition: 1s;
-        }
-        
+.pinkclass {
+    background-color: pink;
+    border-radius: 50%;
+    transition: 1s;
+}
+
 .knapp {
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: var(--blå);
-  border: none;
-  border-radius: 6px;
-  color: black;
-  transition: background-color 0.3s ease;
-  margin-left: 10px; 
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--blå);
+    border: none;
+    border-radius: 6px;
+    color: black;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
 }
 
 .knapp:hover {
-  background-color: var(--mørkb);
-  color: white;
+    background-color: var(--mørkb);
+    color: white;
 }
+
 .jscontainer {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
+
 .inndata-gruppe {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 /* Input og knapp */
 .input-tekst {
-  padding: 10px;
-  width: 60%;
-  max-width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 
 
 /* css til test*/
 .app {
-  width: 90%;
-  background-color: var(--rosa);
-  max-width: 600px;
-  margin: 100px auto 0;
-  border-radius: 10px;
-  padding: 30px;
-  margin-bottom: 200px;
+    width: 90%;
+    background-color: var(--rosa);
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 200px;
 }
 
 .app h1 {
-  color: var(--mørkb);
-  border-bottom: 1px solid var(--rød);
-  padding-bottom: 30px;
+    color: var(--mørkb);
+    border-bottom: 1px solid var(--rød);
+    padding-bottom: 30px;
 }
 
 .quiz {
-  padding: 20px 0;
+    padding: 20px 0;
 }
 
 .btn {
-  background-color: white;
-  color: var(--mørkb);
-  width: 100%;
-  border: 2px solid var(--rød);
-  padding: 10px;
-  margin: 10px 0;
-  text-align: left;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
+    background-color: white;
+    color: var(--mørkb);
+    width: 100%;
+    border: 2px solid var(--rød);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 .btn:hover {
-  background-color: #03254E;
-  color: white;
+    background-color: #03254E;
+    color: white;
 }
 
 #next-btn {
-  background-color: var(--mørkb);
-  color: var(--rosa);
-  width: 150px;
-  border: 0;
-  padding: 10px;
-  margin: 20px auto 0;
-  border-radius: 4px;
-  cursor: pointer;
-  display: none;
+    background-color: var(--mørkb);
+    color: var(--rosa);
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
 }
 
 .correct {
-  background: royalblue;
+    background: royalblue;
 }
 
 .incorrect {
-  background: red;
+    background: red;
 }
