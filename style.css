@@ -21,6 +21,8 @@
 
 body {
     padding-top: 80px;
+    font-family: "Playfair Display", serif;
+    font-weight: 1500px;
 }
 
 h1 {
@@ -119,6 +121,9 @@ nav ul li:hover {
 
 
 /*Første side css*/
+#forside-tittel{
+    color: white;
+}
 .forside {
     position: relative;
     right: 0;
@@ -172,7 +177,6 @@ footer {
     color: white;
     margin-bottom: 25px;
     position: relative;
-    font-family: Arial, sans-serif;
 }
 
 .kontaktinfo h3::before {
@@ -183,12 +187,11 @@ footer {
     width: 50px;
     left: 0;
     bottom: -8px;
-    background: var(--rød);
+    background: var(---grønn);
 }
 
 .kontaktinfo ul li {
     color: white;
-    font-family: Arial, sans-serif;
     font-size: 0.85rem;
     margin-top: 10px;
     transition: .4s;
