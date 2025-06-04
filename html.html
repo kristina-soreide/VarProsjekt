@@ -49,6 +49,56 @@
             </ul>
         </div>
 
+        <div class="artikkel">
+            <h2>Lister i HTML</h2>
+
+            <p>Skal du lage en oppskrift eller vise steg i rekkefølge, er en nummerert liste perfekt!</p>
+            <p>Eksempel på nummerert liste i kode og resultat:</p>
+
+            <div class="eks-boks">
+                <div class="eks">
+                    <pre><code>&lt;ol&gt;
+  &lt;li&gt;Varm opp ovnen&lt;/li&gt;
+  &lt;li&gt;Bland ingredienser&lt;/li&gt;
+  &lt;li&gt;Sett i ovnen&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </div>
+
+                <div class="eks">
+                    <ol>
+                        <li>Varm opp ovnen</li>
+                        <li>Bland ingredienser</li>
+                        <li>Sett i ovnen</li>
+                    </ol>
+                </div>
+            </div>
+
+            <p>Skal du i stedet vise en liste med ingredienser, bruker du en punktliste:</p>
+
+            <div class="eks-boks">
+                <div class="eks">
+                    <pre><code>&lt;ul&gt;
+  &lt;li&gt;Mel&lt;/li&gt;
+  &lt;li&gt;Sukker&lt;/li&gt;
+  &lt;li&gt;Egg&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+
+                <div class="eks">
+                    <ul>
+                        <li>Mel</li>
+                        <li>Sukker</li>
+                        <li>Egg</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>Begge listetyper bruker <code>&lt;li&gt;</code> (list item), men forskjellen er hva du pakker dem inn i:
+                <code>&lt;ol&gt;</code> gir tall, mens <code>&lt;ul&gt;</code> gir punkter.
+            </p>
+        </div>
+
+
         <article class="artikkel">
 
             <h2>Struktur</h2>
@@ -57,32 +107,70 @@
                 <code>&lt;nav&gt;</code> for navigasjon, <code>&lt;main&gt;</code> for hovedinnholdet, og
                 <code>&lt;footer&gt;</code> for bunnen av siden.
             </p>
-            <p>Dette gjør koden lettere å forstå, og det hjelper søkemotorer og skjermlesere å finne fram på siden din.
-            </p>
+            <div class="bilde">
+                <img src="bilder_var/semantisk.png" alt="">
+                <p>Dette gjør koden lettere å forstå, og det hjelper søkemotorer og skjermlesere å finne fram på
+                    siden
+                    din.
+                </p>
+            </div>
         </article>
 
 
         <article class="artikkel">
             <h2>Lenker</h2>
-            <p>Lenker er det som gjør nettsider koblet sammen. Du lager en lenke med <code>&lt;a&gt;</code>-taggen.
+
+            <p>
+                Lenker er det som gjør nettsider koblet sammen. Ha en egen fil for CSS og en egen fil for
+                JavaScript.
+                Filen med HTML-koden din må ha lenkene til de andre filene for å hente informasjonen. CSS-lenken
+                skal
+                stå i
+                <code>&lt;head&gt;</code>, mens JS-lenken står i bunnen, rett over <code>&lt;/body&gt;</code>.
+                Du lager en lenke med <code>&lt;a&gt;</code>-taggen.
             </p>
-            <p>For eksempel kan du lage en lenke til VG med denne koden:</p>
-            <pre><code>&lt;a href="https://www.vg.no" target="_blank" rel="noopener noreferrer"&gt;Gå til VG&lt;/a&gt;</code></pre>
-            <p><em>Target="_blank"</em> gjør at lenken åpnes i ny fane, og <em>rel="noopener noreferrer"</em> øker
-                sikkerheten.</p>
+            <div class="eks-boks">
+                <div class="eks">
+
+                    <p>For eksempel kan du lage lenke til CSS-fil slik:</p>
+                    <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                </div>
+                <div class="eks">
+
+                    <p>For å lenke til en JavaScript-fil ser det slik ut:</p>
+                    <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+
+                </div>
+
+                <div class="eks">
+
+                    <p>Og lenker til andre nettsider kan skrives slik:</p>
+                    <pre><code>&lt;a href="https://www.aftenposten.no"&gt;Gå til Aftenposten&lt;/a&gt;</code></pre>
+                </div>
+            </div>
+
         </article>
 
-
-        <article class="artikkel">
-            <h2>Tekstformatering</h2>
-            <p>Du kan gjøre teksten din fet eller kursiv med disse taggene:</p>
-            <p><b>Fet tekst</b> lages med <code>&lt;b&gt;</code> eller <code>&lt;strong&gt;</code>.</p>
-            <p><i>Kursiv tekst</i> lages med <code>&lt;i&gt;</code> eller <code>&lt;em&gt;</code>.</p>
-            <p>Det er også mulig å understreke tekst med CSS, men HTML-taggen <code>&lt;u&gt;</code> brukes sjeldent i
-                dag.</p>
-
+        <article>
+            <div class="wrapper">
+                <div class="kort">
+                    <h2>Siste html tips</h2>
+                    <p>Bla videre...</p>
+                </div>
+                <div class="kort">
+                    <h2>Det er viktig å huske:</h2>
+                    <p>Ha bilder, css fil og js fil i samme mappe som nettsiden.</p>
+                </div>
+                <div class="kort">
+                    <h2>Det er viktig å huske:</h2>
+                    <p>Du kan kommentere i koden din slik: <code>&lt;!-- Kommentar her --&gt;</code></p>
+                </div>
+                <div class="kort">
+                    <h2>Det er viktig å huske:</h2>
+                    <p>Start html kodingen ved å skrive ! og så enter. Da skrives meta-taggene i "head"</p>
+                </div>
+            </div>
         </article>
-
 
         <a id="tiltopp" href="#toppen">↑ Til toppen</a>
     </main>
