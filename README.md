@@ -1,5 +1,7 @@
-Heisann. Dette er mitt siste prosjekt i it.
-For dette prosjektet hadde jeg en ide om å lage en nettsiden som "lærer" it. Eller kan hjelpe deg lese fagstoff og teste deg.
+Mitt siste it prosjekt ville jeg lage en nettside som gir små tips og går gjennom basic i html, css, javasript.
 
+det er en forside med en video i bakgrunnen. i navbar er det så linker til ulike sider. en html, en css, og en js.
 
-nettsiden gir småtips og går gjennom noen enkle regler til både html, css og javascript.
+Alle sidene har tips i bunnen. og en footer. 
+
+Har også laget en test ved hjelp av en youtube tutorial. 
