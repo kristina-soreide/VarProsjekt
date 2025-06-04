@@ -3,9 +3,11 @@
 :root {
     --blå: #C9F0FF;
     --mørkb: #03254E;
-    --rosa: #FFCCC9;
-    --rød: #750D37;
-    ---grønn: #2CA6A4;
+    --rosa: #FFDDE2;
+    --rød: #DE369D;
+    ---grønn: #9FD8CB;
+    ---feil: #dd2e2e;
+    ---rett: #29BF12;
 }
 
 /*standar reset*/
@@ -227,7 +229,7 @@ footer {
 }
 
 .artikkel h2 {
-    border-bottom: 1px solid var(--rød);
+    border-bottom: 1px solid var(--mørkb);
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-weight: 600;
@@ -265,7 +267,7 @@ img {
 
 .eks {
     background-color: var(---grønn);
-    border: solid var(--rød) 2px;
+    border: solid var(--mørkb) 2px;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -294,7 +296,7 @@ img {
     text-decoration: none;
     margin: 40px auto;
     color: white;
-    background-color: var(---rosa);
+    background-color: var(--rød);
     padding: 12px 20px;
     border-radius: 25px;
     width: 150px;
@@ -337,7 +339,7 @@ img {
 }
 
 .høyre {
-    background-color: var(--blå);
+    background-color: var(---grønn);
     flex: 2 1 400px;
     overflow: auto;
 }
@@ -522,9 +524,9 @@ img {
 /* css til test*/
 .app {
     width: 90%;
-    background-color: var(--rosa);
+    background-color: var(--blå);
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 85px auto 0;
     border-radius: 10px;
     padding: 30px;
     margin-bottom: 200px;
@@ -532,7 +534,7 @@ img {
 
 .app h1 {
     color: var(--mørkb);
-    border-bottom: 1px solid var(--rød);
+    border-bottom: 1px solid var(--mørkb);
     padding-bottom: 30px;
 }
 
@@ -544,18 +546,17 @@ img {
     background-color: white;
     color: var(--mørkb);
     width: 100%;
-    border: 2px solid var(--rød);
+    border: 2px solid var(--mørkb);
     padding: 10px;
     margin: 10px 0;
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .btn:hover {
-    background-color: #03254E;
-    color: white;
+    background-color: var(--rosa);
 }
 
 #next-btn {
@@ -571,9 +572,9 @@ img {
 }
 
 .correct {
-    background: royalblue;
+    background: var(---rett);
 }
 
 .incorrect {
-    background: red;
+    background: var(---feil);
 }

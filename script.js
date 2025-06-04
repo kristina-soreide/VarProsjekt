@@ -15,30 +15,39 @@ function siHei() {
 /*js til test*/
 const questions = [
   {
-    question: "Hvem er du?",
+    question: "Hva brukes < ol > -elementet til?",
     answers: [
-      { text: "Lærer", correct: false },
-      { text: "Elev", correct: true },
-      { text: "Rektor", correct: false },
-      { text: "Assistent", correct: false }
+      { text: "Lage punktliste", correct: true },
+      { text: "Lage nummerert liste", correct: false },
+      { text: "Lage tabell", correct: false },
+      { text: "Lage overskrift", correct: false }
     ]
   },
   {
-    question: "Hva er hovedstaden i Norge?",
+    question: "Hvordan skriver man en kommentar i HTML?",
     answers: [
-      { text: "Bergen", correct: false },
-      { text: "Oslo", correct: true },
-      { text: "Stavanger", correct: false },
-      { text: "Trondheim", correct: false }
+      { text: "//Kommentar", correct: false },
+      { text: "/*Kommentar*/", correct: false },
+      { text: "&lt;!-- Kommentar --&gt;", correct: true },
+      { text: "#Kommentar", correct: false }
     ]
   },
   {
-    question: "Hva er 2 + 2?",
+    question: "Hvor i HTML-dokumentet bør du plassere linken til JavaScript-filen?",
     answers: [
-      { text: "3", correct: false },
-      { text: "4", correct: true },
-      { text: "5", correct: false },
-      { text: "6", correct: false }
+      { text: "Ingen link, og JS filen ligger i en annen mappe", correct: false },
+      { text: "I head", correct: false },
+      { text: "Trenger ikke linke", correct: false },
+      { text: "Nederst i body", correct: true }
+    ]
+  },
+  {
+    question: "Hvis et HTML-element har både en class og en id, hvilken CSS-regel vil ha høyest prioritet?",
+    answers: [
+      { text: "stylingen som kommer først", correct: false },
+      { text: "Id", correct: false },
+      { text: "feilmelding", correct: false },
+      { text: "class", correct: true }
     ]
   }
 ];
