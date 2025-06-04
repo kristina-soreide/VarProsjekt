@@ -30,6 +30,9 @@ h2{
 code{
     background-color: grey;
 }
+main{
+     paddding: 10px;
+}
 
 /*nav bar css*/
 nav {
@@ -204,7 +207,6 @@ footer {
     flex: 1 1 300px;
     max-width: 600px;
     min-width: 280px;
-    /* fjern flex: 1; */
 }
 
 .høyre {
